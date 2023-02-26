@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap--link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- Font-awosome-link -->
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/321bd7016e.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .container iframe {
+            margin-top: 5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="main-video">
+
+                <iframe id="mainImg" width="560" height="315" src="https://www.youtube.com/embed/dR4eijxUubw"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-12">
+                    <div class="embed-responsive embed-responsive-1by1">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fCLR8zhqNJA"></iframe>
+                    </div>
+
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-12">
+
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dj5o-wyHlkU"></iframe>
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-12">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WAtQzfJcy5s"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <body>
+        
+const MainImg=document.getElementById("MainImg");
+const smallimg=document.getElementsByClassName("small-img");
+smallimg[0].onclick = function(){
+MainImg.src=smallimg[0].src
+}
+smallimg[1].onclick = function(){
+MainImg.src=smallimg[1].src
+}
+smallimg[2].onclick = function(){
+MainImg.src=smallimg[2].src
+}
+smallimg[3].onclick = function(){
+MainImg.src=smallimg[3].src
+}
+    </body>
+</body>
+
+</html>
